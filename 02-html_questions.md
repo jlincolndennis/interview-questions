@@ -174,8 +174,7 @@ What are some templating libraries.
 What's LESS?
 >
 
-What do you think of AMD vs CommonJS?
->
+
 
 What's the difference between feature detection, feature inference, and using the UA string?
 >

@@ -199,7 +199,7 @@ What's the difference between .call and .apply?
 > They both server the same purpose, but one accepts an array or arguments instead of a comma separated list.
 
 - Explain Function.prototype.bind.
-> Bind works like call and apply, but instead of invoking the function it's aplied to, it returns a new function with the bound context and arguments.
+> Bind works like call and apply, but instead of invoking the function it's applied to, it returns a new function with the bound context and arguments.
 
 
 Explain how JSONP works (and how it's not really AJAX).
