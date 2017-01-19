@@ -7,7 +7,7 @@
 What is JSON?
 > JavaScript Object Notation
 >
-> A minimal, readable data structure, mostly used to transmit data between a server and a web app. JSON is language independent.  
+> A minimal, readable data structure, often used to transmit data between a server and a web app. JSON is language independent.  
 
 What is REST?
 > REpresentational State Transfer
@@ -18,7 +18,7 @@ What is REST?
 What is HTTP?
 > Hypertext Transfer Protocol
 >
-> HTTP is the foundation of data communication for the World Wide Web. An application layer protocol used by the WWW. HTTP is the protocol used between computers to transfer hypermedia documents, like HTML. Follows a classical client-server model. HTTP is a stateless protocol, meaning that the server does not keep any data between requests.
+> HTTP is the foundation of data communication for the World Wide Web. HTTP is the protocol used between computers to transfer hypermedia documents, like HTML. It follows a classical client-server model. HTTP is a stateless protocol, meaning that the server does not keep any data between requests.
 
 > "HTTP concepts include the idea that files can contain references to other files whose selection will elicit additional transfer requests. Any Web server machine contains, in addition to the Web page files it can serve, an HTTP daemon, a program that is designed to wait for HTTP requests and handle them when they arrive. Your Web browser is an HTTP client, sending requests to server machines. When the browser user enters file requests by either "opening" a Web file (typing in a Uniform Resource Locator or URL) or clicking on a hypertext link, the browser builds an HTTP request and sends it to the Internet Protocol address (IP address) indicated by the URL. The HTTP daemon in the destination server machine receives the request and sends back the requested file or files associated with the request. (A Web page often consists of more than one file.)" ([Source](http://searchwindevelopment.techtarget.com/definition/HTTP))
 
@@ -98,12 +98,13 @@ What are CSRF attacks? Give an example
 >
 > A type of attack that occurs when a malicious web site, email, blog, instant message, or program causes a user’s web browser to perform an unwanted action on a trusted site for which the user is currently authenticated. CSRF attacks are used by an attacker to make a target system perform a function via the target's browser without knowledge of the target user. CSRF attacks specifically target state-changing requests, not theft of data, since the attacker has no way to see the response to the forged request.
 >
-> For example, an attacker could use a hidden form to send a specific POST request, with the data filled in by the attacker, and disguise the form submission as an innocuous link. The victim would have to be authenticated in a other tab or window to the site where the form is being submitted.
+> For example, an attacker could use a hidden form to send a specific POST request, with the data filled in by the attacker, and disguise the form submission as an innocuous link. The victim would have to be authenticated in another tab or window to the site where the form is being submitted.
 >
 >To protect against CSRF attacks, servers can check Referrer headers, or implement "nonce" tokens: single use, randomly generated strings that authenticate form submissions.
 
 > More Info: https://www.owasp.org/index.php/Cross-Site_Request_Forgery_(CSRF)_Prevention_Cheat_Sheet
 >_
+>
 > More Info: https://www.youtube.com/watch?v=vRBihr41JTo
 
 What is cross browser compatibility?
@@ -111,30 +112,41 @@ What is cross browser compatibility?
 
 
 In as much detail as possible, explain what happens when I type 'google.com' into my navbar and hit enter.
-  > - Browser constructs an HTTP request
-    - Browser makes a DNS lookup to find the IP
-    - There's a TCP handshake with the server
-    - The HTTP request is sent from my browser to the server
-    - A Google server receives the request, probably in a load balancer of some sort
-    - Forwards it on until it eventually gets to a server that processes the homepage
-    - Server generates an HTTP response and sends it back to the browser
-    - Browser parses the HTTP response, turns HTML into DOM, then visually draws the page
-    - For every image, script tag etc., it checks the browser cache and makes new HTTP requests for everything missing
+> * Browser constructs an HTTP request
+> * Browser makes a DNS lookup to find the IP
+> * There's a TCP handshake with the server
+> * The HTTP request is sent from my browser to the server
+> * A Google server receives the request, probably in a load balancer of some sort
+> * Forwards it on until it eventually gets to a server that processes the homepage
+> * Server generates an HTTP response and sends it back to the browser
+> * Browser parses the HTTP response, turns HTML into DOM, then visually draws the page
+> * For every image, script tag etc., it checks the browser cache and makes new HTTP requests for everything missing
 
 What are the 3 data sources that the params hash is compiled from?
 >path variables, request body, and query string.
 
-How would you design a URL shortener similar to bit.ly?
->_
-
 What are some advantages/disadvantages to testing your code?
->_
+> #### Advantages
+> * You only end up writing the code you need. Tests give you confidence you have achieved required functionality.
+> * Tests allow you to break large projects into manageable chunks
+> * Tests help you focus on specific and measurable goals
+> * Tests force you to focus on the specific outputs your project requires
+> * Serves as documentation for how code is meant to behave
+> * Creates reusable code
+> * Allows for easier debugging
+>
+> #### Disadvantages
+> * It can feel like writing twice as much code
+> * Existing code bases might not lend themselves to testing
+> * A bad or flawed test can cause cascading problems
 
 What tools would you use to test your code's functionality?
->_
+>Testing frameworks like Mocha and Chai, build using TDD/"Red, Green, Refactor"
 
-What is the difference between a unit test and a functional/integration test?
->_
+What is the difference between a unit test and an integration test?
+> A **unit test** checks that a specific snippet of code is behaving the way it is expected to. They are narrow in scope, and are written by, and most useful to the programmer. If dependencies are required to test a snippet, they are 'faked' by the test ('mock objects').
+>
+> **Integration tests** tend to test entire applications or large features, and ensure that the components built work well together. They usually require resources are realistic functioning environments. They also test that specific components behave correctly when connect to actual dependencies and resources.
 
 What is the purpose of a code style linting tool?
->_
+>_ Linting tools check code for potential errors before it is compiled or run. They can check for both Programatic and Stylistic errors.
