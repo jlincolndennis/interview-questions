@@ -183,3 +183,23 @@ What are the advantages/disadvantages of using CSS preprocessors? (SASS, Compass
 
 Why and how are shorthand properties used? Give examples.
 >
+
+What does CSS Stand for and what does its name mean?
+>Cascading Style Sheets. Refers to the inheritance of style rules from parent elements.
+
+How is CSS Specificity calculated?
+>Common answer: A running point total is tallied by from CSS selectors for a given rule. Different selectors are worth different amounts of points. Inline styles are 1000, IDs are 100, classes/attributes are 10, elements and pseudoselectors are 1
+
+>True answer: It's implemented differently in different browsers. You're never supposed to be able to brute-force override a higher specificity, but you can in some browsers.
+
+What is z-index in CSS?
+>It's the z axis in a 3 dimensional system. Objects with a greater z index will appear to sit above of those with a lower z index.
+
+Name 3 color systems in CSS
+>RGBA, Hexadecimal, Keyword
+
+Name 4 different media queries in CSS
+>Device height, device aspect ratio, device width, orientation
+
+What's the difference between a CSS "attribute" and a "property"?
+>_

@@ -7,16 +7,8 @@
 - https://medium.com/javascript-scene/10-interview-questions-every-javascript-developer-should-know-6fa6bdf5ad95
 
 
-Classical Inheritance & OOP
->
-
 NaN
 >
-
-Describe event bubbling.
-> After an event is triggered on a specific element, it travels up the DOM and alerts parent elements in nesting order.
-
-> Event delegation allows you to avoid adding event listeners to specific nodes;  instead, the event listener is added to one parent.
 
 Difference between document load event and document ready event?
 >
@@ -26,7 +18,6 @@ Why is it, in general, a good idea to leave the global scope of a website as-is 
 
 Why would you use something like the load event? Does this event have disadvantages? Do you know any alternatives, and
 >
-
 
 What are the pros and cons of using Promises instead of callbacks?
 >
@@ -80,8 +71,8 @@ What's the difference between `null` and `undefined`?
 > Something with a value of `null` is empty, while something with the value of `undefined` hasn't been initialized.
 
 What does the `this` keyword refer to in JavaScript?
->    1. The first value passed to `call()` or `apply()`
-     2. The value that was `bind()`ed to the function
+>   1. The first value passed to `call()` or `apply()`
+    2. The value that was `bind()`ed to the function
     3. The calling object
     4. The global scope
 
@@ -109,8 +100,6 @@ What is immutability?
 What is async in JavaScript?
 > When a function does not immediately return a value. The rest of the program continues executing, requiring special handling and "callback functions" for when function calls complete.
 
-What is the DOM?
-> Document Object Model. Tree representation of all HTML elements on a webpage that creates the structure of a webpage, and what HTML gets parsed into.
 
 Explain how the factory pattern works.
 > A factory is when you need an object with a particular interface, but you let a constructor decide which specific object you get back.
@@ -142,7 +131,7 @@ What does AJAX stand for?  Explain how it works in as much detail as possible
 
 What’s the difference between `==` and `===` in JS?
 >Type Coercion
-
+>
 > == doesn't care about type (i.e. type coercion), so "2" == 2 will evaluate to true. === does care about type, so "2" === 2 will evaluate to false.
 
 What is "callback hell" and how can it be avoided?
@@ -150,11 +139,6 @@ What is "callback hell" and how can it be avoided?
 
 What's the difference between Primitive and Reference types in Javascript?
 >A primitive type has a fixed amount of memory that it takes up, where as a reference type does not. Examples of primitive types are boolean values or integers, where as examples of ref types would be arrays and objects. Ref types like arrays are made up of references, or pointers to their values, hence the name
-
-Explain event delegation
-> After an event is triggered on a specific element, it travels up the DOM and alerts parent elements in nesting order.
-
-> Event delegation allows you to avoid adding event listeners to specific nodes;  instead, the event listener is added to one parent.
 
 Explain how `this` works in JavaScript
 > The 'this' reference refers to (and holds the value of) the singular object that invoked the function where 'this' is used.
@@ -219,7 +203,7 @@ What is the difference between == and ===?
 >`==` uses coercion to loosely equate primitive values.
 
 Why is it called a Ternary expression, what does the word "Ternary" indicate?
->
+> Ternary refers to the fact that there are three parts to the statement, a condition and two different actions to take, one if the statement is evaluated as true, and the other if the statement evaluates to false.
 
 What is "use strict";? what are the advantages and disadvantages to using it?
 >
